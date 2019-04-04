@@ -9,6 +9,14 @@ import java.util.List;
 public class Conta implements Comparable<Conta> {
 	int saldo;
 
+	public int getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(int saldo) {
+		this.saldo = saldo;
+	}
+
 	public Conta(int saldo) {
 		super();
 		this.saldo = saldo;
@@ -42,6 +50,9 @@ public class Conta implements Comparable<Conta> {
 		System.out.println(contas);
 		Collections.sort(contas);
 		System.out.println(contas);
+		for (Conta conta : contas) {
+			System.out.println(conta);
+		}
 		
 		Iterator<Conta> i = contas.iterator();
 		System.out.println("--------------------------------");
@@ -50,3 +61,9 @@ public class Conta implements Comparable<Conta> {
 		}
 	}
 }
+
+
+
+
+
+
